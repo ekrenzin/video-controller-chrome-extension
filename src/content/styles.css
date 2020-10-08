@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #e2d9e1;
+    --button-bg: #918ea520;
+    --secondary-color: #5a5a5a;
+    --streamer-bg: #0b0a14;
+    --accent-color: #57fff2;
+    --accent-color-40: #8afff640;
+    --accent-color-20: #8afff620;
+    --accent-color-10: #8afff610;
+    --danger: #ff4d4d;
+    --complimentary-color: #fff257;
+    --card-color: rgba(50, 90, 150, 0.1);
+    --font-color: rgb(230, 230, 230);
+    --bright-font-color: rgb(255, 255, 255);
+    --secondary-font-color: #737373;
+    --tertiary-font-color: #717171;
+    --border-color: rgba(160, 170, 180, 1);
+    --border-secondary-color: #717171;
+    --solid-button: rgba(87, 255, 242, 0.05);
+    /* --bg-color: #141223; */
+    --bg-color: #0b0a14;
+    --bg-gradient: linear-gradient(0deg,
+            rgba(154, 86, 151, 0.09),
+            rgba(154, 86, 151, 0.01)),
+        linear-gradient(214.47deg,
+            rgba(29, 107, 130, 0.09) -13.09%,
+            rgba(4, 134, 152, 0.18) -10.93%,
+            rgba(120, 140, 200, 0.1) 14.47%,
+            rgba(27, 201, 239, 0.135) 73.4%);
+    --secondary-bg-color: #202020;
+    --tertiary-bg-color: #0b0a1440;
+    --lighter-bg-color: #353535;
+    --button-background: #404040;
+    --skeleton-bg: #15202b;
+    --skeleton-accent: #10171e;
+    --disabled: rgb(100, 100, 100);
+    --heading-color: #818cab;
+    --bg-transparency: rgba(2.5, 7, 15, 0.9);
+    --accent-gradient: linear-gradient(90deg, #1d4ed8, cyan);
+    --svg-filter: invert(83%) sepia(4%) saturate(0%) hue-rotate(68deg) brightness(97%) contrast(90%);
+    --svg-filter-hover: invert(95%) sepia(55%) saturate(2283%) hue-rotate(158deg) brightness(106%) contrast(105%);
+}
+
+
+.enlarge-video {
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9999 !important;
+    object-fit: contain !important;
+    background: black !important;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.fas {
+    color: white;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    /* background is a nice gradient */
+    background: #24c6dc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #514a9d,
+        #24c6dc
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #514a9d,
+        #24c6dc
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white !important;
+    /* add shadow and br */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    z-index: 10000 !important;
+    transition: all 0.5s ease;
+}
