@@ -7,7 +7,7 @@
      * Initialize the state from storage and set cleanup.
      */
     onMount(() => {
-      storage.get('isActive').then(value => isActive = value);
+      storage.set({ isActive });
     });
   
     /** 

@@ -23,8 +23,8 @@ export default defineManifest(async (env) => ({
     },
     content_scripts: [
         {
-            matches: ["https://*/*"],
             js: ["src/content/index.ts"],
+            matches: ["<all_urls>"],
         },
     ],
     background: {
