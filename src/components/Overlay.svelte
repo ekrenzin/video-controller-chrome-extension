@@ -1,6 +1,6 @@
 <script lang="ts">
     import Videos from "./Videos.svelte";
-    let isOpen = true; // Initially, the component is open
+    let isOpen = false; // Initially, the component is closed
 
     /**
      * Toggles the component between open and closed states.
@@ -34,13 +34,19 @@
 
     /* When Closed */
     .overlay.closed {
-        width: 50px;
-        height: 50px;
+        width: 25px;
+        height: 25px;
         overflow: hidden;
         border-radius: 50%;
+        padding: 0;
         display: flex; /* Flexbox to center the button */
         justify-content: center;
         align-items: center;
+    }
+
+    /* When Open */
+    .overlay.open {
+        padding: 0.5rem;
     }
 
     /* Button styles */
